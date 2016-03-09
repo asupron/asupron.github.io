@@ -8,9 +8,9 @@ h1 {
 	font-style: bold;
 	margin-bottom: 0px;
 }
-h1: hover {
+h1:hover {
 	font-size: 120px;
-	font-style:bold;
+	font-style: bold;
 	color: white;
 }
 h2 {
