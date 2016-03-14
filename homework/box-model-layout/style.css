@@ -1,5 +1,5 @@
 #container {
-	width: 1000px;
+	width: 75%;
 	margin: 0 auto;
 	text-align: center;
 	background-color: #dedede;
@@ -30,7 +30,7 @@ a {
 	color: yellow;
 }
 
-#container1, #container2, #container3 {
+.article {
 	background-color: #ff6347;
 	padding: 10px 10px;
 	margin: 10px 0px 10px 0px;
