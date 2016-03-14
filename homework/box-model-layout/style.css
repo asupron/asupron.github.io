@@ -1,4 +1,37 @@
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #dedede;
+	padding: 15px 15px 20px 15px;
+}
+
 #nav {
 	color: white;
 	background-color: black;
+	padding: 10px 0px 10px 0px;
+	margin: 0px 0px 30px 0px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+#container1 {
+	color: purple;
+}
+
+#container2 {
+	color: green;
+}
+
+#container3 {
+	color: yellow;
+}
+
+#container1, #container2, #container3 {
+	background-color: #ff6347;
+	padding: 10px 10px;
+	margin: 10px 0px 10px 0px;
 }
