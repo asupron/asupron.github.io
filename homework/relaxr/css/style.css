@@ -1,0 +1,225 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 55px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #033048;
+  margin-bottom: 15px;
+  line-height: 45px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: #033048;
+  margin-bottom: 15px;
+
+}
+
+.more {
+  font-size: 24px;
+  color: #033048;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #606161;
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 15px;
+}
+
+header a {
+  color: #f9e42e;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+side ul {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+side a {
+  color: #606161;
+  text-decoration: none;
+}
+
+.line {
+  border-bottom: 1px black solid;
+  margin: 20px 0px;
+}
+
+.about {
+  line-height: 30px;
+  margin-top: 80px;
+}
+
+.about h5 {
+  font-weight: 900;
+  font-size: 24px;
+  color: #033048;
+}
+
+.buttonbar {
+  background-color: #f9e42e;
+  padding: 30px;
+}
+
+/******************************************
+/* LAYOUT
+/******************************************
+/* Center the container */
+.container {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #f0efef;
+  padding: 0px 100px;  
+}
+
+main {
+  float: left;
+  max-width: 700px;
+  margin-top: 60px;
+}
+
+side {
+  float: right;
+  width: 240px;
+  margin-top: 50px;
+}
+
+header {
+  background-color: #033048;
+  overflow: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+header h1 {
+  float: left;
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  overflow: auto;
+  padding-top: 12px;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.ad {
+  background-color: white;
+  width: auto;
+  height: 400px;
+  margin-top: 80px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+footer {
+  background-color: #121212;
+  overflow: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+footer h1 {
+  color: #f9e42e;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 50px 0px;
+  overflow: auto;
+}
+
+footer img {
+  padding-bottom: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+footer p {
+  color: #606161;
+  font-size: 20px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+
+#button {
+    background-color: #033048;
+    border: none;
+    height: 45px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.article2 .line {
+    margin-bottom: 120px;
+}
+
+.firstcharacter {
+    float: left; 
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 4px 8px 0px 3px;
+  }

@@ -1,0 +1,72 @@
+.content {
+	width: 720px;
+	padding: 54px;	
+	border-left: solid 6px #dddddd;
+	font-family: 'Lato', sans-serif;
+	}
+
+h1 {
+	color: #DD0000;
+    line-height: 1.5px;
+    font-size: 60px
+    }
+
+h2 {
+	font-size: 40px
+}
+
+
+h3 {
+	font-size: 25px;
+	color: black;
+}
+
+p {
+	color: #444444;
+	font-size: 18px;
+}
+
+img {
+	max-width: 100%;
+}
+
+header a {
+	color: #dddddd;
+	font-size: 20px;
+	padding-right: 15px;
+}
+
+header a:hover {
+	color: black;
+}
+
+footer a {
+	color: #DD0000;
+}
+
+footer a:hover {
+	color: #aa0000;
+}
+
+.date {
+	color: #cccccc;
+}
+
+.title {
+	color: black;
+}
+
+.line {
+	margin: 25px 0px 50px 0px;
+	border-bottom: .5px #cccccc solid;
+}
+
+.continue {
+	text-align: right;
+	font-weight: bold;
+	color: #DD0000;
+}
+
+footer {
+	color: #bbbbbb;
+}
