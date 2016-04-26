@@ -1,0 +1,15 @@
+.wrapper {
+	text-align: center;
+}
+
+body {
+	margin-top: 50px;
+}
+
+header {
+	top: 0;
+	height: 50px;
+	background: blue;
+	position: fixed;
+	width: 100%;
+}
