@@ -8,20 +8,43 @@ $(document).ready(function () {
 
 	$('#get-weather').submit(function (event) {
 		event.preventDefault();
-		var APIKEY = '19ab861f15cfd2e8216a3be1ed615598';
-		var zipCode = $('#zip').val();
+		var button	= $('.submitbutton').text();
+if (button == 'Retry') {
+		$('#zipinput').show();
+		$('#temp').text('');
+		$('#humidity').text('');
+		$('#speed').text('');
+		$('#temptxt').hide();
+		$('#windtxt').hide();
+		$('#humidtxt').hide();
 
+}else if (button ==  'Submit') {
+
+
+
+
+		// $('#get-weather').prepend('<button type="submit" class="retrybutton" id="button" style="visibility: inherit; opacity: 1;">Retry</button> ');
+
+
+		var APIKEY = '19ab861f15cfd2e8216a3be1ed615598';
+		var zipCode = $('#zip').val();		
+ 		$('#temptxt').show();
+		$('#windtxt').show();
+		$('#humidtxt').show();
 		$.ajax({
 			url: 'http://api.openweathermap.org/data/2.5/weather?zip='+ zipCode + ',us,&units=imperial&appid=' + APIKEY,
 			type: 'GET',
 			success: function (response) {
 				processData(response);
+			$('#zipinput').hide();
+
+			$('.submitbutton').text('Retry');
 			},
 			error: function (xhr) {
 				console.log(xhr);
 			}
 		})
-
+}else {};
 	})
 
 
@@ -31,11 +54,13 @@ $(document).ready(function () {
 		var humidity = data.main.humidity;
 		var speed = data.wind.speed;
 
-		$('#temp').text(temp);
-		$('#humidity').text(humidity);
-		$('#speed').text(speed);
+
+		$('#temp').prepend(temp);
+		$('#humidity').prepend(humidity);
+		$('#speed').prepend(speed);
 
 	}
+
 
 
 })

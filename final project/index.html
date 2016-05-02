@@ -5,6 +5,7 @@
 	<title>LOCOLOR</title>
 
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
 
@@ -16,10 +17,10 @@
 
 	<main>
 
-		<form id="get-weather">
-			<input type="zip" value="" maxlength="5" placeholder="ZIP CODE" style="border:none"/>
+		<form class="animated fadeInDown" id="get-weather">
+			<input type="zip" value="" id="zipinput" maxlength="5" placeholder="ZIP CODE" style="border:none"/>
 
-			<button type="submit" class="button" style="visibility: inherit; opacity: 1;">Submit</button> 
+			<button type="submit" class="submitbutton" id="button" style="visibility: inherit; opacity: 1;">Submit</button> 
 		</form>
 			
 		<div id="elements">	
@@ -27,14 +28,14 @@
 
 			<div class="weather" id="temp"> 
 
-				<h3></h3>
+				<h3 class="hidden" id="temptxt">Temperature</h3>
 
 
 			</div>
 
 			<div class="weather" id="humidity"> 
 
-				<h3></h3>
+				<h3 class="hidden" id="humidtxt">Humidity</h3>
 
 
 			</div>
@@ -42,7 +43,7 @@
 			<div class="weather" id="speed"> 
 
 
-				<h3></h3>
+				<h3 class="hidden" id="windtxt">Wind Speed</h3>
 
 			</div>
 
