@@ -18,36 +18,60 @@
 	<main>
 
 		<form class="animated fadeInDown" id="get-weather">
-			<input type="zip" value="" id="zipinput" maxlength="5" placeholder="ZIP CODE" style="border:none"/>
+			<input type="zip" value="" id="zipinput" maxlength="5" placeholder="ZIP CODE" autocomplete="off" style="border:none"/>
 
-			<button type="submit" class="submitbutton" id="button" style="visibility: inherit; opacity: 1;">Submit</button> 
-		</form>
-			
 		<div id="elements">	
+
+			<div class="weather" id="city">
+
+				<span id="city-val"></span>
+
+			</div>
 
 
 			<div class="weather" id="temp"> 
 
-				<h3 class="hidden" id="temptxt">Temperature</h3>
+				<img src="images/temp.png" class="icon">
 
+				<br>
+
+				<span id="temp-val"></span>
+
+				<h3 id="temptxt">Temperature</h3>
 
 			</div>
 
 			<div class="weather" id="humidity"> 
 
-				<h3 class="hidden" id="humidtxt">Humidity</h3>
+				<img src="images/humid.png" class="icon">
+
+				<br>
+
+				<span id="humid-val"></span>
+
+				<h3 id="humidtxt">Humidity</h3>
 
 
 			</div>
 
 			<div class="weather" id="speed"> 
 
+				<img src="images/wind.png" class="icon">
 
-				<h3 class="hidden" id="windtxt">Wind Speed</h3>
+				<br>
+
+				<span id="speed-val"></span>
+
+				<h3 id="windtxt">Wind Speed</h3>
 
 			</div>
 
 		</div>
+
+			<button type="submit" class="submitbutton" id="button" style="visibility: inherit; opacity: 1;">Submit</button> 
+		</form>
+			
+	
 		
 
 	</main>
